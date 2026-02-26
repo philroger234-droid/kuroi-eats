@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kuroi Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <span class="logo-text">KUROI</span>
+                    <span class="logo-box">EATS</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="drinks.html">DRINKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+            <a href="menu.html" class="order-btn">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero contact-hero">
+        <div class="page-hero-content">
+            <h1 class="page-title">GET IN TOUCH</h1>
+            <p class="page-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>CONTACT US</h2>
+                <p>Have a question, feedback, or just want to say hello? We're here to help!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">EMAIL</span>
+                        <a href="mailto:hello@kuroieats.com">hello@kuroieats.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">PHONE</span>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">HOURS</span>
+                        <p>Mon - Sun: 11:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">ADDRESS</span>
+                        <p>123 Sakura Street<br>Tokyo District, NY 10001</p>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <span class="contact-label">FOLLOW US</span>
+                    <div class="social-icons-large">
+                        <a href="#" class="social-btn">FACEBOOK</a>
+                        <a href="#" class="social-btn">INSTAGRAM</a>
+                        <a href="#" class="social-btn">TWITTER</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>SEND US A MESSAGE</h3>
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">SUBJECT</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-header">
+            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What areas do you deliver to?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We currently deliver within a 10-mile radius of our kitchen locations. Enter your address on our homepage to check if we deliver to your area.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How long does delivery take?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our average delivery time is 30 minutes. During peak hours, it may take up to 45 minutes. You can track your order in real-time through our website.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Do you accommodate dietary restrictions?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer vegetarian options and can accommodate some allergies. Please mention any dietary restrictions in the order notes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What is your cancellation policy?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Orders can be cancelled within 5 minutes of placing them. After that, the kitchen may have already started preparing your food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <span class="logo-text">KUROI</span>
+                        <span class="logo-box">EATS</span>
+                    </div>
+                </a>
+                <p>Delivering legendary flavors since 2024</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>NAVIGATE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>SUPPORT</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="mailto:hello@kuroieats.com">hello@kuroieats.com</a>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KuroiEats. All rights reserved.</p>
+            <p>// Designed with anime spirit //</p>
+        </div>
+    </footer>
+
+    <!-- Cart Button -->
+    <div class="cart-button" onclick="showCart()">
+        <span class="cart-icon">CART</span>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>YOUR CART</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

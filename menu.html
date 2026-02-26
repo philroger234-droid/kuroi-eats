@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Kuroi Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <span class="logo-text">KUROI</span>
+                    <span class="logo-box">EATS</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html" class="active">MENU</a></li>
+                <li><a href="drinks.html">DRINKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="menu.html" class="order-btn">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 class="page-title">OUR MENU</h1>
+            <p class="page-subtitle">Authentic Japanese cuisine delivered to your door</p>
+        </div>
+    </section>
+
+    <!-- Ramen Section -->
+    <section id="ramen" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">RAMEN & NOODLES</h2>
+            <p class="section-subtitle">Soul-warming noodle bowls</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/ramen-color.jpg" alt="Tonkotsu Ramen">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>TONKOTSU RAMEN</h3>
+                        <span class="item-price">$14.99</span>
+                    </div>
+                    <p class="item-desc">Rich pork bone broth, chashu pork, soft-boiled egg, green onions, nori, bamboo shoots</p>
+                    <button class="add-btn" onclick="addToCart('Tonkotsu Ramen', 14.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/udon-color.jpg" alt="Tempura Udon">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>TEMPURA UDON</h3>
+                        <span class="item-price">$13.99</span>
+                    </div>
+                    <p class="item-desc">Thick wheat noodles in dashi broth with crispy shrimp tempura, fish cake, green onions</p>
+                    <button class="add-btn" onclick="addToCart('Tempura Udon', 13.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/miso-color.jpg" alt="Miso Ramen">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>MISO RAMEN</h3>
+                        <span class="item-price">$12.99</span>
+                    </div>
+                    <p class="item-desc">Savory miso broth, ground pork, corn, butter, bean sprouts, green onions</p>
+                    <button class="add-btn" onclick="addToCart('Miso Ramen', 12.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/shabu-color.jpg" alt="Shabu Shabu">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SHABU SHABU</h3>
+                        <span class="item-price">$24.99</span>
+                    </div>
+                    <p class="item-desc">Thinly sliced beef, vegetables, tofu, mushrooms in steaming dashi broth</p>
+                    <button class="add-btn" onclick="addToCart('Shabu Shabu', 24.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sushi Section -->
+    <section id="sushi" class="menu-section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">SUSHI & SASHIMI</h2>
+            <p class="section-subtitle">Fresh and delicate</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/sushi-color.jpg" alt="Sushi Platter">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SUSHI PLATTER</h3>
+                        <span class="item-price">$18.99</span>
+                    </div>
+                    <p class="item-desc">Assorted nigiri (salmon, tuna, shrimp) and maki rolls, served with wasabi and ginger</p>
+                    <button class="add-btn" onclick="addToCart('Sushi Platter', 18.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/sushi-dark.jpg" alt="Salmon Roll">
+                    <div class="item-badge">NEW</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SALMON ROLL SET</h3>
+                        <span class="item-price">$15.99</span>
+                    </div>
+                    <p class="item-desc">8 pieces of salmon avocado roll with sesame seeds and soy sauce</p>
+                    <button class="add-btn" onclick="addToCart('Salmon Roll Set', 15.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/poke-color.jpg" alt="Poke Bowl">
+                    <div class="item-badge">NEW</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SALMON POKE BOWL</h3>
+                        <span class="item-price">$16.99</span>
+                    </div>
+                    <p class="item-desc">Fresh salmon, avocado, edamame, cucumber, rice, sesame seeds, poke sauce</p>
+                    <button class="add-btn" onclick="addToCart('Salmon Poke Bowl', 16.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tempura Section -->
+    <section id="tempura" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">TEMPURA</h2>
+            <p class="section-subtitle">Crispy perfection</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/tempura-color.jpg" alt="Tempura Set">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SHRIMP TEMPURA</h3>
+                        <span class="item-price">$12.99</span>
+                    </div>
+                    <p class="item-desc">4 pieces of jumbo shrimp tempura with vegetables, served with tentsuyu dipping sauce</p>
+                    <button class="add-btn" onclick="addToCart('Shrimp Tempura', 12.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/tempura.jpg" alt="Vegetable Tempura">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>VEGETABLE TEMPURA</h3>
+                        <span class="item-price">$9.99</span>
+                    </div>
+                    <p class="item-desc">Assorted seasonal vegetables in light crispy batter - sweet potato, lotus root, shiso leaf</p>
+                    <button class="add-btn" onclick="addToCart('Vegetable Tempura', 9.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gyoza Section -->
+    <section id="gyoza" class="menu-section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">GYOZA & DUMPLINGS</h2>
+            <p class="section-subtitle">Pan-fried dumplings</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/gyoza-color.jpg" alt="Pork Gyoza">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>PORK GYOZA</h3>
+                        <span class="item-price">$8.99</span>
+                    </div>
+                    <p class="item-desc">6 pieces of pan-fried dumplings filled with pork, cabbage, and garlic chives</p>
+                    <button class="add-btn" onclick="addToCart('Pork Gyoza', 8.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/gyoza-dark.jpg" alt="Vegetable Gyoza">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>VEGETABLE GYOZA</h3>
+                        <span class="item-price">$7.99</span>
+                    </div>
+                    <p class="item-desc">6 pieces of pan-fried dumplings with mushroom, cabbage, and carrot filling</p>
+                    <button class="add-btn" onclick="addToCart('Vegetable Gyoza', 7.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Takoyaki Section -->
+    <section id="takoyaki" class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">TAKOYAKI & STREET FOOD</h2>
+            <p class="section-subtitle">Street food classics</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/takoyaki-color.jpg" alt="Takoyaki">
+                    <div class="item-badge">HOT</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>CLASSIC TAKOYAKI</h3>
+                        <span class="item-price">$9.99</span>
+                    </div>
+                    <p class="item-desc">8 pieces of octopus balls topped with takoyaki sauce, mayo, aonori, and bonito flakes</p>
+                    <button class="add-btn" onclick="addToCart('Classic Takoyaki', 9.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/okonomiyaki-color.jpg" alt="Okonomiyaki">
+                    <div class="item-badge">NEW</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>OKONOMIYAKI</h3>
+                        <span class="item-price">$11.99</span>
+                    </div>
+                    <p class="item-desc">Savory Japanese pancake with cabbage, pork, topped with sauce, mayo, bonito flakes</p>
+                    <button class="add-btn" onclick="addToCart('Okonomiyaki', 11.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rice & Bento Section -->
+    <section class="menu-section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">RICE & BENTO</h2>
+            <p class="section-subtitle">Complete meals</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/katsu-color.jpg" alt="Katsu Curry">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>KATSU CURRY</h3>
+                        <span class="item-price">$15.99</span>
+                    </div>
+                    <p class="item-desc">Crispy breaded pork cutlet served with Japanese curry and steamed rice</p>
+                    <button class="add-btn" onclick="addToCart('Katsu Curry', 15.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/bento-color.jpg" alt="Bento Box">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>TERIYAKI BENTO</h3>
+                        <span class="item-price">$16.99</span>
+                    </div>
+                    <p class="item-desc">Grilled chicken teriyaki with rice, tamagoyaki, edamame, and pickled vegetables</p>
+                    <button class="add-btn" onclick="addToCart('Teriyaki Bento', 16.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/donburi-color.jpg" alt="Gyudon">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>GYUDON</h3>
+                        <span class="item-price">$13.99</span>
+                    </div>
+                    <p class="item-desc">Thinly sliced beef over rice with onsen egg, green onions, sweet soy sauce</p>
+                    <button class="add-btn" onclick="addToCart('Gyudon', 13.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/onigiri-color.jpg" alt="Onigiri">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>ONIGIRI SET</h3>
+                        <span class="item-price">$8.99</span>
+                    </div>
+                    <p class="item-desc">3 rice triangles with nori seaweed - salmon, tuna, and umeboshi fillings</p>
+                    <button class="add-btn" onclick="addToCart('Onigiri Set', 8.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skewers & Fried Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">YAKITORI & FRIED</h2>
+            <p class="section-subtitle">Grilled and crispy favorites</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/yakitori-color.jpg" alt="Yakitori">
+                    <div class="item-badge">NEW</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>YAKITORI SET</h3>
+                        <span class="item-price">$10.99</span>
+                    </div>
+                    <p class="item-desc">4 skewers of grilled chicken with scallions, glazed with tare sauce</p>
+                    <button class="add-btn" onclick="addToCart('Yakitori Set', 10.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/karaage-color.jpg" alt="Karaage">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>CHICKEN KARAAGE</h3>
+                        <span class="item-price">$11.99</span>
+                    </div>
+                    <p class="item-desc">Japanese fried chicken, golden crispy pieces with lemon wedge and mayo</p>
+                    <button class="add-btn" onclick="addToCart('Chicken Karaage', 11.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appetizers Section -->
+    <section class="menu-section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">APPETIZERS</h2>
+            <p class="section-subtitle">Start your meal right</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/agedashi-color.jpg" alt="Agedashi Tofu">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>AGEDASHI TOFU</h3>
+                        <span class="item-price">$7.99</span>
+                    </div>
+                    <p class="item-desc">Golden fried tofu cubes in dashi broth with green onions and bonito flakes</p>
+                    <button class="add-btn" onclick="addToCart('Agedashi Tofu', 7.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/seaweed-salad-color.jpg" alt="Seaweed Salad">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>SEAWEED SALAD</h3>
+                        <span class="item-price">$6.99</span>
+                    </div>
+                    <p class="item-desc">Fresh wakame seaweed with sesame seeds, cucumber, and tangy dressing</p>
+                    <button class="add-btn" onclick="addToCart('Seaweed Salad', 6.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/chawanmushi-color.jpg" alt="Chawanmushi">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>CHAWANMUSHI</h3>
+                        <span class="item-price">$5.99</span>
+                    </div>
+                    <p class="item-desc">Steamed egg custard with shrimp, chicken, and shiitake mushroom</p>
+                    <button class="add-btn" onclick="addToCart('Chawanmushi', 5.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/edamame-color.jpg" alt="Edamame">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>EDAMAME</h3>
+                        <span class="item-price">$4.99</span>
+                    </div>
+                    <p class="item-desc">Steamed young soybeans sprinkled with sea salt</p>
+                    <button class="add-btn" onclick="addToCart('Edamame', 4.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">DESSERTS</h2>
+            <p class="section-subtitle">Sweet endings</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/mochi-color.jpg" alt="Mochi Ice Cream">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>MOCHI ICE CREAM</h3>
+                        <span class="item-price">$6.99</span>
+                    </div>
+                    <p class="item-desc">3 pieces of chewy rice cake filled with ice cream (matcha, strawberry, vanilla)</p>
+                    <button class="add-btn" onclick="addToCart('Mochi Ice Cream', 6.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/dorayaki-color.jpg" alt="Dorayaki">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>DORAYAKI</h3>
+                        <span class="item-price">$5.99</span>
+                    </div>
+                    <p class="item-desc">3 fluffy pancakes filled with sweet red bean paste</p>
+                    <button class="add-btn" onclick="addToCart('Dorayaki', 5.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <span class="logo-text">KUROI</span>
+                        <span class="logo-box">EATS</span>
+                    </div>
+                </a>
+                <p>Delivering legendary flavors since 2024</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>NAVIGATE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>SUPPORT</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="mailto:hello@kuroieats.com">hello@kuroieats.com</a>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KuroiEats. All rights reserved.</p>
+            <p>// Designed with anime spirit //</p>
+        </div>
+    </footer>
+
+    <!-- Cart Button -->
+    <div class="cart-button" onclick="showCart()">
+        <span class="cart-icon">CART</span>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>YOUR CART</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

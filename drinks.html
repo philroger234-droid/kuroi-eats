@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - Kuroi Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <span class="logo-text">KUROI</span>
+                    <span class="logo-box">EATS</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="drinks.html" class="active">DRINKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="menu.html" class="order-btn">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Drinks Hero -->
+    <section class="page-hero drinks-hero">
+        <div class="page-hero-content">
+            <h1 class="page-title">REFRESHING DRINKS</h1>
+            <p class="page-subtitle">Quench your thirst with authentic Japanese beverages</p>
+        </div>
+    </section>
+
+    <!-- Soft Drinks Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">SOFT DRINKS</h2>
+            <p class="section-subtitle">Non-alcoholic refreshments</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/melon-soda-color.jpg" alt="Melon Soda">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>MELON SODA FLOAT</h3>
+                        <span class="item-price">$4.99</span>
+                    </div>
+                    <p class="item-desc">Iconic Japanese melon soda with vanilla ice cream float and cherry on top</p>
+                    <button class="add-btn" onclick="addToCart('Melon Soda Float', 4.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/strawberry-milk-color.jpg" alt="Strawberry Milk">
+                    <div class="item-badge">NEW</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>STRAWBERRY MILK</h3>
+                        <span class="item-price">$3.99</span>
+                    </div>
+                    <p class="item-desc">Creamy and sweet Japanese strawberry milk, perfect with any meal</p>
+                    <button class="add-btn" onclick="addToCart('Strawberry Milk', 3.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/ramune-color.jpg" alt="Ramune">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>RAMUNE</h3>
+                        <span class="item-price">$3.49</span>
+                    </div>
+                    <p class="item-desc">Classic Japanese marble soda in iconic Codd-neck bottle - original flavor</p>
+                    <button class="add-btn" onclick="addToCart('Ramune', 3.49)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/matcha-color.jpg" alt="Matcha Latte">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>ICED MATCHA LATTE</h3>
+                        <span class="item-price">$5.49</span>
+                    </div>
+                    <p class="item-desc">Premium Uji matcha with milk and ice, lightly sweetened</p>
+                    <button class="add-btn" onclick="addToCart('Iced Matcha Latte', 5.49)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alcoholic Section -->
+    <section class="menu-section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">ALCOHOLIC BEVERAGES</h2>
+            <p class="section-subtitle">For the adults</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/sake-color.jpg" alt="Sake">
+                    <div class="item-badge">PREMIUM</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>PREMIUM SAKE</h3>
+                        <span class="item-price">$12.99</span>
+                    </div>
+                    <p class="item-desc">Junmai Daiginjo sake, smooth and refined, served warm or chilled (180ml)</p>
+                    <button class="add-btn" onclick="addToCart('Premium Sake', 12.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/beer-color.jpg" alt="Japanese Beer">
+                    <div class="item-badge">POPULAR</div>
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>JAPANESE BEER</h3>
+                        <span class="item-price">$6.99</span>
+                    </div>
+                    <p class="item-desc">Crisp and refreshing draft beer, perfect with ramen and yakitori (500ml)</p>
+                    <button class="add-btn" onclick="addToCart('Japanese Beer', 6.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Drinks Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2 class="section-title">HOT DRINKS</h2>
+            <p class="section-subtitle">Warm your soul</p>
+        </div>
+        <div class="menu-grid-full">
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/matcha-color.jpg" alt="Hot Matcha">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>HOT MATCHA</h3>
+                        <span class="item-price">$4.49</span>
+                    </div>
+                    <p class="item-desc">Traditional whisked green tea, served with wagashi sweet</p>
+                    <button class="add-btn" onclick="addToCart('Hot Matcha', 4.49)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="menu-item-card">
+                <div class="item-image">
+                    <img src="images/sake-color.jpg" alt="Hot Sake">
+                </div>
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3>HOT SAKE</h3>
+                        <span class="item-price">$8.99</span>
+                    </div>
+                    <p class="item-desc">Warm sake served in traditional tokkuri flask and ochoko cups (180ml)</p>
+                    <button class="add-btn" onclick="addToCart('Hot Sake', 8.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <span class="logo-text">KUROI</span>
+                        <span class="logo-box">EATS</span>
+                    </div>
+                </a>
+                <p>Delivering legendary flavors since 2024</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>NAVIGATE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>SUPPORT</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="mailto:hello@kuroieats.com">hello@kuroieats.com</a>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KuroiEats. All rights reserved.</p>
+            <p>// Designed with anime spirit //</p>
+        </div>
+    </footer>
+
+    <!-- Cart Button -->
+    <div class="cart-button" onclick="showCart()">
+        <span class="cart-icon">CART</span>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>YOUR CART</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuroi Eats - Japanese Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <span class="logo-text">KUROI</span>
+                    <span class="logo-box">EATS</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="drinks.html">DRINKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="menu.html" class="order-btn">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="light-rays">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+            <div class="ray ray-4"></div>
+            <div class="ray ray-5"></div>
+            <div class="ray ray-6"></div>
+            <div class="ray ray-7"></div>
+            <div class="ray ray-8"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-tag">[ DELIVERING GREATNESS ]</p>
+                <h1 class="hero-title">
+                    <span>TASTE</span>
+                    <span>THE</span>
+                    <span>POWER</span>
+                </h1>
+                <p class="hero-subtitle">Lightning-fast delivery. Legendary flavors.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn-primary">ORDER NOW</a>
+                    <a href="menu.html" class="btn-secondary">VIEW MENU</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="images/hero-mask.jpg" alt="Japanese Mask">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Section -->
+    <section id="menu" class="menu-categories">
+        <div class="section-number">// 01</div>
+        <h2 class="section-title">MENU CATEGORIES</h2>
+        <p class="section-subtitle">Choose your battle</p>
+        <div class="categories-grid">
+            <a href="menu.html#ramen" class="category-card">
+                <div class="card-frame">
+                    <img src="images/ramen-color.jpg" alt="Ramen">
+                    <div class="card-overlay">
+                        <h3>RAMEN</h3>
+                        <p>Soul-warming bowls</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#sushi" class="category-card">
+                <div class="card-frame">
+                    <img src="images/sushi-color.jpg" alt="Sushi">
+                    <div class="card-overlay">
+                        <h3>SUSHI</h3>
+                        <p>Fresh and delicate</p>
+                    </div>
+                </div>
+            </a>
+            <a href="drinks.html" class="category-card">
+                <div class="card-frame">
+                    <img src="images/matcha-color.jpg" alt="Drinks">
+                    <div class="card-overlay">
+                        <h3>DRINKS</h3>
+                        <p>Refresh your spirit</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#tempura" class="category-card">
+                <div class="card-frame">
+                    <img src="images/tempura-color.jpg" alt="Tempura">
+                    <div class="card-overlay">
+                        <h3>TEMPURA</h3>
+                        <p>Crispy perfection</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#gyoza" class="category-card">
+                <div class="card-frame">
+                    <img src="images/gyoza-color.jpg" alt="Gyoza">
+                    <div class="card-overlay">
+                        <h3>GYOZA</h3>
+                        <p>Pan-fried dumplings</p>
+                    </div>
+                </div>
+            </a>
+            <a href="menu.html#takoyaki" class="category-card">
+                <div class="card-frame">
+                    <img src="images/takoyaki-color.jpg" alt="Takoyaki">
+                    <div class="card-overlay">
+                        <h3>TAKOYAKI</h3>
+                        <p>Street food classic</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section id="featured" class="featured-dishes">
+        <div class="section-number">// 02</div>
+        <h2 class="section-title">FEATURED DISHES</h2>
+        <p class="section-subtitle">Today's special picks</p>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <div class="dish-frame">
+                    <img src="images/ramen-color.jpg" alt="Tonkotsu Ramen">
+                    <div class="dish-badge">POPULAR</div>
+                </div>
+                <div class="dish-info">
+                    <h3>TONKOTSU RAMEN</h3>
+                    <p>Rich pork broth, chashu, egg</p>
+                    <div class="dish-price">$14.99</div>
+                    <button class="add-btn" onclick="addToCart('Tonkotsu Ramen', 14.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-frame">
+                    <img src="images/sushi-color.jpg" alt="Sushi Platter">
+                    <div class="dish-badge">NEW</div>
+                </div>
+                <div class="dish-info">
+                    <h3>SUSHI PLATTER</h3>
+                    <p>Assorted nigiri and rolls</p>
+                    <div class="dish-price">$18.99</div>
+                    <button class="add-btn" onclick="addToCart('Sushi Platter', 18.99)">[ + ADD ]</button>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-frame">
+                    <img src="images/tempura-color.jpg" alt="Tempura Set">
+                </div>
+                <div class="dish-info">
+                    <h3>TEMPURA SET</h3>
+                    <p>Shrimp and vegetable tempura</p>
+                    <div class="dish-price">$12.99</div>
+                    <button class="add-btn" onclick="addToCart('Tempura Set', 12.99)">[ + ADD ]</button>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container">
+            <a href="menu.html" class="view-all-btn">VIEW ALL DISHES</a>
+        </div>
+    </section>
+
+    <!-- Drinks Preview Section -->
+    <section class="drinks-preview">
+        <div class="section-number">// 03</div>
+        <h2 class="section-title">REFRESHING DRINKS</h2>
+        <p class="section-subtitle">Quench your thirst</p>
+        <div class="drinks-grid">
+            <a href="drinks.html" class="drink-card">
+                <div class="drink-frame">
+                    <img src="images/melon-soda-color.jpg" alt="Melon Soda">
+                    <div class="drink-overlay">
+                        <h3>MELON SODA</h3>
+                        <p>$4.99</p>
+                    </div>
+                </div>
+            </a>
+            <a href="drinks.html" class="drink-card">
+                <div class="drink-frame">
+                    <img src="images/strawberry-milk-color.jpg" alt="Strawberry Milk">
+                    <div class="drink-overlay">
+                        <h3>STRAWBERRY MILK</h3>
+                        <p>$3.99</p>
+                    </div>
+                </div>
+            </a>
+            <a href="drinks.html" class="drink-card">
+                <div class="drink-frame">
+                    <img src="images/sake-color.jpg" alt="Sake">
+                    <div class="drink-overlay">
+                        <h3>PREMIUM SAKE</h3>
+                        <p>$12.99</p>
+                    </div>
+                </div>
+            </a>
+            <a href="drinks.html" class="drink-card">
+                <div class="drink-frame">
+                    <img src="images/ramune-color.jpg" alt="Ramune">
+                    <div class="drink-overlay">
+                        <h3>RAMUNE</h3>
+                        <p>$3.49</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="view-all-container">
+            <a href="drinks.html" class="view-all-btn">VIEW ALL DRINKS</a>
+        </div>
+    </section>
+
+    <!-- Ready to Order Section -->
+    <section class="ready-order">
+        <div class="light-rays">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+            <div class="ray ray-4"></div>
+        </div>
+        <h2 class="section-title">READY TO ORDER?</h2>
+        <p class="section-subtitle">Your meal is just a click away</p>
+        <div class="order-input">
+            <input type="text" placeholder="Enter your address or zip code">
+            <a href="menu.html" class="btn-primary">FIND FOOD</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <span class="logo-text">KUROI</span>
+                        <span class="logo-box">EATS</span>
+                    </div>
+                </a>
+                <p>Delivering legendary flavors since 2024</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>NAVIGATE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="drinks.html">Drinks</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h4>SUPPORT</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Delivery Info</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="link-column">
+                    <h4>CONTACT</h4>
+                    <a href="mailto:hello@kuroieats.com">hello@kuroieats.com</a>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KuroiEats. All rights reserved.</p>
+            <p>// Designed with anime spirit //</p>
+        </div>
+    </footer>
+
+    <!-- Cart Button -->
+    <div class="cart-button" onclick="showCart()">
+        <span class="cart-icon">CART</span>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>YOUR CART</h3>
+                <button class="close-btn" onclick="closeCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
